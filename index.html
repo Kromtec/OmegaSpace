@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+
+    <script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+    <script src="http://code.createjs.com/tweenjs-0.5.0.min.js"></script>
+    <script src="http://code.createjs.com/soundjs-0.5.0.min.js"></script>
+    <script src="http://code.createjs.com/preloadjs-0.4.0.min.js"></script>
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+    <script src="js/lib/pathfinding-browser.min.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="omegaspace.ico" type="image/x-icon" />
+
+    <script src="js/init.js"></script>
+    <script src="js/contentManager.js"></script>
+    <script src="js/ambient/starfield.js"></script>
+    <script src="js/ambient/star.js"></script>
+    <script src="js/ambient/meteoroidfield.js"></script>
+    <script src="js/ambient/meteoroid.js"></script>
+    <script src="js/vessels/spacestation.js"></script>
+    <script src="js/chars/controlledchar.js"></script>
+    <script src="js/chars/hostilechar.js"></script>
+
+    <title>Omega Space</title>
+</head>
+<body onload="init();">
+    <div id="char_panel" class="char_panel">
+        <img id="char_portrait" src="img/characters/portraits/portrait_sb.png" />
+        <div>
+            <div id="char_details">
+                <span id="char_name"></span><br/>
+                <span id="char_class"></span>
+            </div>
+            <div id="char_bars">
+                <div class="char_bar">
+                    <div id="char_health"></div>
+                </div>
+                <div class="char_bar">
+                    <div id="char_stamina"></div>
+                </div>
+                <div class="char_bar">
+                    <div id="char_sanity"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <canvas id="html5Canvas">
+            Your browser doesn't support HTML5 canvas.
+        </canvas>
+    </div>
+</body>
+</html>

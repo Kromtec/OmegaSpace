@@ -1,0 +1,77 @@
+﻿/* Remove margins and HTML scrollbars */
+BODY, HTML {
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    overflow: hidden;
+}
+
+#html5Canvas {
+    background-color: #000;
+}
+
+.char_panel {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 300px;
+
+    background: #0000ff;
+    background: rgba(0, 0, 255, 0.2);
+    border: 2px dashed #00ffff;
+    border: 2px dashed rgba(0, 255, 255, 0.2);
+
+    display: none;
+}
+
+#char_details {
+    float: right;
+    margin: 5px 10px 0 0;
+    width: 55%;
+}
+
+#char_name {
+    color: white;
+    font: bold 11px Audiowide;
+}
+
+#char_class {
+    color: white;
+    font: 10px Audiowide;
+}
+
+#char_bars {
+    float: right;
+    margin: 5px 10px 10px 0;
+    height: 15px;
+    width: 55%;
+}
+
+.char_bar {
+    border: 2px ridge #00ffff;
+    border: 2px ridge rgba(0, 255, 255, 0.4);
+    height: 100%;
+}
+
+#char_health {
+    background: red;
+    height: 100%;
+    width: 100%;
+}
+
+#char_stamina {
+    background: orange;
+    height: 100%;
+    width: 100%;
+}
+
+#char_sanity {
+    background: royalblue;
+    height: 100%;
+    width: 100%;
+}
+
+#char_portrait {
+    float: left;
+    margin: 10px;
+}
